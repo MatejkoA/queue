@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queue Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.js') }}">
+</head>
+<body class="bg-primary">       
+    <h1>Welcome to the Queue Management System</h1>
+    <p>You have been assigned queue number {{num}}.</p>
+    <p>Your join time is {{tim}}.</p>
+    <p>Your expected serve time is {{servTim}}.</p>
+    <p>Your user id is {{id}}</p>
+    <p>You can check your queue status by visiting the <a href="{{ url_for('queue') }}">queue</a> page.</p>
+    <p>If you want to leave the queue please click <a href="{{ url_for('leave') }}">here</a>.</p>
+    <p>You can find more information about the system <a href="{{ url_for('about') }}">here</a>.</p>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
