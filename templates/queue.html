@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}rpiQueTemplate{% endblock %}
+{% block content %}
+    <h2 style="text-align:center;"> Your number in the queue is: </h2>
+    <h1 style="text-align:center;"> {{num}}</h1>
+
+    <br>
+    <br>
+
+    <h2 style="text-align:center;"> Joined queue at:</h2>
+    <h1 style="text-align:center;"> {{ tim }} </h1>
+
+    <br>
+
+    <h2 style="text-align:center;"> Estimated service time:</h2>
+    <h1 style="text-align:center;">{{ servTim }}</h1>
+{% endblock %}
